@@ -85,7 +85,8 @@ public class CreateProgress extends IAction {
         "'"+progress.getProgress_type()+"',"+
         " '"+progress.getCreate_time()+"',"+
         " '"+progress.getUpdate_time()+"',"+
-        "'"+progress.getProgress_user_id()+"')";
+        "'"+progress.getProgress_user_id()+ "',"+
+        " '"+progress.getProgress_place()+"')";
 
         stmt.execute(sqlString);
 

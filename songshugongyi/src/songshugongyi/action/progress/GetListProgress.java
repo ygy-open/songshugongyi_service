@@ -71,6 +71,7 @@ private static final String RequestParamKey_Type = "type";
                 progress.setProgress_type(resultSet.getInt("progress_type"));
                 progress.setCreate_time(resultSet.getString("create_time"));
                 progress.setUpdate_time(resultSet.getString("update_time"));
+                progress.setProgress_place(resultSet.getString("progress_place"));
                 list_progress.add(progress);
             }
         }
@@ -128,6 +129,7 @@ private static final String RequestParamKey_Type = "type";
                     task.setTask_name(resultSet.getString("task_name"));
                     task.setCreate_time(resultSet.getString("create_time"));
                     task.setUpdate_time(resultSet.getString("update_time"));
+
                     taskList.add(task);
 
                 }
