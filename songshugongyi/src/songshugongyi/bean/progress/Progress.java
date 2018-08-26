@@ -1,18 +1,23 @@
 package songshugongyi.bean.progress;
 
+
+
 import songshugongyi.bean.User;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
  * Created by yuanopen on 2018/5/8/008.
  */
 
-public class Progress {
+public class Progress implements Serializable{
     //项目id
     private  String progress_id;
     //项目名称
     private  String progress_name;
+    //项目名称
+    private  String progress_place;
     //项目详情
     private  String progress_introduction;
     //项目当前报名人数
@@ -32,6 +37,7 @@ public class Progress {
     //类型1:正在报名  2：完成项目
 
     private int progress_type;
+    private User progress_user;
     private String progress_user_id;
 
     public String getProgress_user_id() {
@@ -41,9 +47,6 @@ public class Progress {
     public void setProgress_user_id(String progress_user_id) {
         this.progress_user_id = progress_user_id;
     }
-
-    private User progress_user;
-
     public User getProgress_user() {
         return progress_user;
     }
@@ -51,6 +54,7 @@ public class Progress {
     public void setProgress_user(User progress_user) {
         this.progress_user = progress_user;
     }
+
     public int getProgress_type() {
         return progress_type;
     }
@@ -73,6 +77,14 @@ public class Progress {
 
     public void setProgress_name(String progress_name) {
         this.progress_name = progress_name;
+    }
+
+    public String getProgress_place() {
+        return progress_place;
+    }
+
+    public void setProgress_place(String progress_place) {
+        this.progress_place = progress_place;
     }
 
     public String getProgress_introduction() {
