@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <!-- servlet名字 -->
+        <servlet-name>UserServlet</servlet-name>
+        <!-- servlet实现的类-->
+        <servlet-class>songshugongyi.servlet.UserServlet</servlet-class>
+    </servlet>
+
+    <!--servlet映射-->
+    <servlet-mapping>
+        <!--servlet名字-->
+        <servlet-name>UserServlet</servlet-name>
+        <!--访问servlet 的url地址-->
+        <url-pattern>/user</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PrpgressServlet</servlet-name>
+        <servlet-class>songshugongyi.servlet.ProgressServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PrpgressServlet</servlet-name>
+        <url-pattern>/progress</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>HotTopicServlet</servlet-name>
+        <servlet-class>songshugongyi.servlet.HotTopicServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HotTopicServlet</servlet-name>
+        <url-pattern>/hotTopic</url-pattern>
+    </servlet-mapping>
+
+</web-app>
