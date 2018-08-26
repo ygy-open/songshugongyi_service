@@ -3,11 +3,10 @@ package songshugongyi.action.progress;
 import songshugongyi.ResponseObject;
 import songshugongyi.SqlManager;
 import songshugongyi.action.IAction;
-import songshugongyi.bean.progress.Progress;
+
 import songshugongyi.bean.progress.ProgressDetailCount;
-import songshugongyi.bean.progress.ProgressLike;
-import songshugongyi.bean.progress.ProgressLikeCount;
-import songshugongyi.util.SQLUtils;
+
+
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -16,10 +15,7 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+
 
 /**@fun 用来获取项目的评论，转发，点赞，收藏数
  * Created by yuanopen on 2018/7/15/015.

@@ -4,19 +4,13 @@ import songshugongyi.ResponseObject;
 import songshugongyi.SqlManager;
 import songshugongyi.action.IAction;
 import songshugongyi.bean.Comment;
-import songshugongyi.bean.progress.ProgressCollect;
-import songshugongyi.bean.progress.ProgressCollectCount;
-import songshugongyi.bean.progress.ProgressComment;
-import songshugongyi.bean.progress.ProgressCommentCount;
 import songshugongyi.util.GsonUtils;
-import songshugongyi.util.SQLUtils;
 import sun.misc.BASE64Decoder;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.Connection;
-import java.sql.ResultSet;
+
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.HashMap;
